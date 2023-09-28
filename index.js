@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 80
+const port = process.env.PORT || 3000
 
 app.get("/",(req,res)=>{
     log("route access");
@@ -8,5 +8,5 @@ app.get("/",(req,res)=>{
 })
 
 app.listen(port,()=>{
-    console.log("the server is started 10:06");
+    console.log("the server is started 10:28");
 })
