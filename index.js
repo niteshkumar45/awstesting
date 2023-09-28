@@ -3,6 +3,7 @@ const app = express()
 const port = 80
 
 app.get("/",(req,res)=>{
+    log("route access");
     res.send("this is home page")
 })
 
